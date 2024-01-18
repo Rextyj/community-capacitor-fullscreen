@@ -1,5 +1,5 @@
 {
-  "name": "@capacitor-community//fullscreen",
+  "name": "@capacitor-community/fullscreen",
   "version": "4.1.0-devel",
   "description": "Enables immersive fullscreen mode for android devices",
   "main": "dist/plugin.cjs.js",
