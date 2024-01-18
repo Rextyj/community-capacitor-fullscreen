@@ -1,0 +1,187 @@
+{
+  "api": {
+    "name": "FullscreenPlugin",
+    "slug": "fullscreenplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "setNavigationBarContrastColor",
+        "signature": "(value: { contrast: Contrast; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "value",
+            "docs": "",
+            "type": "{ contrast: Contrast; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "Contrast"
+        ],
+        "slug": "setnavigationbarcontrastcolor"
+      },
+      {
+        "name": "setStatusBarContrastColor",
+        "signature": "(value: { contrast: Contrast; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "value",
+            "docs": "",
+            "type": "{ contrast: Contrast; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "Contrast"
+        ],
+        "slug": "setstatusbarcontrastcolor"
+      },
+      {
+        "name": "getSafeAreaInsets",
+        "signature": "() => Promise<SafeAreaInsets>",
+        "parameters": [],
+        "returns": "Promise<SafeAreaInsets>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "SafeAreaInsets"
+        ],
+        "slug": "getsafeareainsets"
+      },
+      {
+        "name": "getSafeAreaInsets",
+        "signature": "() => Promise<SafeAreaInsets>",
+        "parameters": [],
+        "returns": "Promise<SafeAreaInsets>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "SafeAreaInsets"
+        ],
+        "slug": "getsafeareainsets"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'insetsChanged', listenerFunc: (insets: SafeAreaInsets) => void) => Promise<PluginListenerHandle> & PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "",
+            "type": "'insetsChanged'"
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(insets: SafeAreaInsets) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle> & PluginListenerHandle",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PluginListenerHandle",
+          "SafeAreaInsets"
+        ],
+        "slug": "addlistenerinsetschanged"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "SafeAreaInsets",
+      "slug": "safeareainsets",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "top",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "right",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "bottom",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "left",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "PluginListenerHandle",
+      "slug": "pluginlistenerhandle",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "remove",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "() => Promise<void>"
+        }
+      ]
+    }
+  ],
+  "enums": [
+    {
+      "name": "Contrast",
+      "slug": "contrast",
+      "members": [
+        {
+          "name": "light",
+          "value": "'light'",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "dark",
+          "value": "'dark'",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    }
+  ],
+  "typeAliases": [],
+  "pluginConfigs": [
+    {
+      "name": "Fullscreen",
+      "slug": "fullscreen",
+      "properties": [
+        {
+          "name": "keyboardResizeNative",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        }
+      ],
+      "docs": "On Android, the keyboard can be configured with the following options:"
+    }
+  ]
+}

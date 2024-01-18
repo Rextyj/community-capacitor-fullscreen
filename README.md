@@ -19,6 +19,7 @@ npx cap sync
 * [`getSafeAreaInsets()`](#getsafeareainsets)
 * [`addListener('insetsChanged', ...)`](#addlistenerinsetschanged)
 * [Interfaces](#interfaces)
+* [Enums](#enums)
 
 </docgen-index>
 
@@ -28,12 +29,12 @@ npx cap sync
 ### setNavigationBarContrastColor(...)
 
 ```typescript
-setNavigationBarContrastColor(value: { contrast: 'light' | 'dark'; }) => Promise<void>
+setNavigationBarContrastColor(value: { contrast: Contrast; }) => Promise<void>
 ```
 
-| Param       | Type                                          |
-| ----------- | --------------------------------------------- |
-| **`value`** | <code>{ contrast: 'light' \| 'dark'; }</code> |
+| Param       | Type                                                         |
+| ----------- | ------------------------------------------------------------ |
+| **`value`** | <code>{ contrast: <a href="#contrast">Contrast</a>; }</code> |
 
 --------------------
 
@@ -41,12 +42,12 @@ setNavigationBarContrastColor(value: { contrast: 'light' | 'dark'; }) => Promise
 ### setStatusBarContrastColor(...)
 
 ```typescript
-setStatusBarContrastColor(value: { contrast: 'light' | 'dark'; }) => Promise<void>
+setStatusBarContrastColor(value: { contrast: Contrast; }) => Promise<void>
 ```
 
-| Param       | Type                                          |
-| ----------- | --------------------------------------------- |
-| **`value`** | <code>{ contrast: 'light' \| 'dark'; }</code> |
+| Param       | Type                                                         |
+| ----------- | ------------------------------------------------------------ |
+| **`value`** | <code>{ contrast: <a href="#contrast">Contrast</a>; }</code> |
 
 --------------------
 
@@ -107,5 +108,16 @@ addListener(eventName: 'insetsChanged', listenerFunc: (insets: SafeAreaInsets) =
 | Prop         | Type                                      |
 | ------------ | ----------------------------------------- |
 | **`remove`** | <code>() =&gt; Promise&lt;void&gt;</code> |
+
+
+### Enums
+
+
+#### Contrast
+
+| Members     | Value                |
+| ----------- | -------------------- |
+| **`light`** | <code>'light'</code> |
+| **`dark`**  | <code>'dark'</code>  |
 
 </docgen-api>
